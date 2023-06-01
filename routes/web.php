@@ -23,3 +23,6 @@ Route::post('/upload',function(Request $request){
     $uploadedFileUrl = Cloudinary::upload($request->file('file')->getRealPath(),['folder' => 'testing',])->getSecurePath();
     dd($uploadedFileUrl);
 });
+Route::get('/', function () {
+    return "guyghiuyhi";
+});
